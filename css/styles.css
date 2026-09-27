@@ -1,0 +1,297 @@
+/* ================================
+   GENERAL PAGE STYLING
+   ================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   HEADER
+   ================================ */
+
+header {
+    background-color: #172033;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+
+/* ================================
+   NAVIGATION
+   ================================ */
+
+nav {
+    background-color: #253858;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 8px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #ffffff;
+    color: #253858;
+}
+
+
+/* ================================
+   MAIN CONTENT
+   ================================ */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* Repeated section class selector */
+.content-section {
+    background-color: white;
+    padding: 25px;
+    margin: 25px 0;
+    border: 1px solid #d5dbe3;
+    border-radius: 8px;
+}
+
+.content-section h2 {
+    color: #172033;
+    border-bottom: 2px solid #253858;
+    padding-bottom: 8px;
+}
+
+
+/* Unique ID selector */
+#hobbies {
+    background-color: #eef3f8;
+}
+
+
+/* Element selector */
+p {
+    font-size: 1rem;
+}
+
+
+/* ================================
+   LISTS
+   ================================ */
+
+ul,
+ol {
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* ================================
+   PHOTO GALLERY
+   ================================ */
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+figure {
+    margin: 0;
+    width: 30%;
+    min-width: 220px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #d5dbe3;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+
+/* ================================
+   VIDEO AND AUDIO
+   ================================ */
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 15px 0;
+}
+
+audio {
+    width: 100%;
+    max-width: 600px;
+    margin: 15px 0;
+}
+
+
+/* ================================
+   TABLE
+   ================================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #aeb7c4;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #253858;
+    color: white;
+}
+
+
+/* ================================
+   CONTACT FORM
+   ================================ */
+
+form {
+    max-width: 700px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aeb7c4;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #253858;
+}
+
+
+/* ================================
+   SUBMIT BUTTON
+   ================================ */
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #253858;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #172033;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    background-color: #172033;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px auto;
+        max-width: 300px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .content-section {
+        padding: 18px;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
